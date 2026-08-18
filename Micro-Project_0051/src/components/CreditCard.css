@@ -1,0 +1,99 @@
+.card-preview {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 320px;
+}
+
+.card {
+  position: absolute;
+  width: 320px;
+  height: 190px;
+  border-radius: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.card-front {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(135deg, #6b45d1 0%, #b23a7a 55%, #e0714a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chip-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.chip-ring {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.card-number {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.card-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card-back {
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, #6b6b6b 0%, #4a4a4a 100%);
+}
+
+.card-stripe {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  background: #1c1c1c;
+}
+
+.card-cvc-strip {
+  position: absolute;
+  top: 90px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-cvc-placeholder {
+  width: 140px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+}
+
+.card-cvc {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
